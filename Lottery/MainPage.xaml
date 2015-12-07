@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Lottery.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lottery"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel x:Name="choujiang" VerticalAlignment="Top">
+            <TextBlock x:Name="txt" Text="抽奖环节" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="num" Text="滚动屏幕" FontFamily="Microsoft YaHei UI" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="name" Text="中奖名单：" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+        </StackPanel>
+        <StackPanel x:Name="action" VerticalAlignment="Center">
+            <ProgressRing x:Name="loading" IsActive="True" Width="150" Height="150" Foreground="Blue"></ProgressRing>
+            <Button x:Name="click" Content="点我抽奖" HorizontalAlignment="Center" Margin="0,-151,0,0" Click="click_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Page>
